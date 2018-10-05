@@ -47,8 +47,21 @@
 	    <scope>provided</scope>
 	</dependency>
 
+	<!-- StringUtils的常用方法 -->
+	<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+	<dependency>
+	    <groupId>org.apache.commons</groupId>
+	    <artifactId>commons-lang3</artifactId>
+	    <version>3.4</version>
+	</dependency>
 	
-	
+	<!-- StringUtils的常用方法,这个里的功能更强大 -->
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-context</artifactId>
+	    <version>4.3.14.RELEASE</version>
+	</dependency>
 	
 	
 	
