@@ -1,5 +1,6 @@
 package cn.twang.afirstjava;	//Demo类在cn.twang.demo包下
 
+import cn.twang.utils.firstUtils.Utils;
 
 /**
  * @ClassName: Demo   
@@ -15,7 +16,17 @@ public class Demo {
 		System.out.println("helloword.java");
 		
 		//调用其它包中的类,则在上面要引入此类所在的包名直到所在java文件的类名。如:import cn.twang.utils.Utils
+		Utils u = new Utils();
+		u.fun();
+
+	/******************************************************************************/	
 		
+		// 获取随机数，字符串连接符：+
+		System.out.println("Random:" + Math.random());//Random:0.8057759524371092
+		
+		// 获取一个1-100之间的随机数
+		System.out.println("Random:" + ((int) (Math.random() * 100) + 1));//Random:52		
+		System.out.println("ss" + 22 + 5);	//ss225
 	}
 
 }
