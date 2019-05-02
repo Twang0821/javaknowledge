@@ -1,10 +1,5 @@
 package cn.twang.redis;
 
-import java.sql.ResultSet;
-
-import com.sun.javafx.collections.SetListenerHelper;
-import com.sun.xml.internal.bind.v2.runtime.Name;
-
 import redis.clients.jedis.Jedis;
 
 /**
