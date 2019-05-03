@@ -21,13 +21,12 @@ import kafka.message.MessageAndMetadata;
 public class DemoConsumer {
 
 	/**
-	 * @param args
-	 *            传入的数组参数
+	 * @param args 传入的数组参数
 	 */
 	public static void main(String[] args) {
-		args = new String[] {
-				"192.168.184.131:2181,192.168.184.132:2181,192.168.184.133:2181",
-				"topic1", "group1", "consumer1" };
+		/*args = new String[] {
+				"192.168.184.131:2181,192.168.184.132:2181,192.168.184.133:2181", "topic1", "group1", "consumer1" };*/
+		args = new String[] {"192.168.87.110:2181", "topic1", "group1", "consumer1" };
 		if (args == null || args.length != 4) {
 			System.err
 					.print("Usage:\n\tjava -jar kafka_consumer.jar ${zookeeper_list} ${topic_name} ${group_name} ${consumer_id}");
