@@ -3,8 +3,9 @@ package cn.twang.redis;
 import redis.clients.jedis.Jedis;
 
 /**
- * @author Twangrentao
- * @version 创建时间：2017年4月17日 下午5:18:35 类说明
+ * @author Tyanao
+ * @date 2017年4月17日 下午5:18:35
+ * @version 
  */
 public class FirstRedis {
 
