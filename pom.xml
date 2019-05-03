@@ -128,6 +128,7 @@
 	    <scope>compile</scope>
 	</dependency>
 	
+	<!--  kafka所需jar包 -->
 	<!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka -->
 	<dependency>
 	    <groupId>org.apache.kafka</groupId>
@@ -183,6 +184,7 @@
             <version>3.3.1</version>
         </dependency>
         
+        <!-- hive所需jar包 -->
         <dependency>
             <groupId>org.apache.hive</groupId>
             <artifactId>hive-jdbc</artifactId>
@@ -197,10 +199,10 @@
                     <groupId>log4j</groupId>
                     <artifactId>log4j</artifactId>
                 </exclusion>
-                 <exclusion>
-            <artifactId>log4j-over-slf4j</artifactId>
-            <groupId>org.slf4j</groupId>
-        </exclusion>
+                <exclusion>
+		           <artifactId>log4j-over-slf4j</artifactId>
+		           <groupId>org.slf4j</groupId>
+        		</exclusion>
             </exclusions>
         </dependency>
     

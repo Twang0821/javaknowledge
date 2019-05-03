@@ -14,7 +14,7 @@ import kafka.message.MessageAndMetadata;
 /**
  * kafka的消费者_java客户端
  * @author 70973
- * @date 2018年4月30日上午0:30:02
+ * @date 2017年4月30日上午0:30:02
  */
 public class ConsumerDemo {
 	private static final String topic = "mysons";

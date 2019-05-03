@@ -9,7 +9,7 @@ import kafka.producer.ProducerConfig;
 /**
  * 使用Producer API发送消息到kafka
  * @author 70973
- * @date 2018年4月21日下午11:17:41
+ * @date 2017年4月21日下午11:17:41
  */
 public class ProducerDemo2 {
 	public static void main(String[] args) throws Exception {
