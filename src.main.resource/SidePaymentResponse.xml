@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xml>
+	<Service>
+		<Header>
+			<SourceSysId>H13</SourceSysId>
+			<ConsumerId>D07</ConsumerId>
+			<ServiceCode>D0720049</ServiceCode>
+			<GlobalSeq>33A0220180131000000301</GlobalSeq>
+			<TranSeq>A0220180131000000561</TranSeq>
+			<BranchId>830010</BranchId>
+			<TranTeller>000127</TranTeller>
+			<AuthFlag>M</AuthFlag>
+			<TranDate>20180131</TranDate>
+			<TranTime>202222845</TranTime>
+			<RetStatus></RetStatus>
+			<RetCode>111111111111</RetCode>
+			<RetMsg>001</RetMsg>
+			<PgUpDownFlag>tokenVerification</PgUpDownFlag>
+			<TotalNum>000c298eac91</TotalNum>
+			<CurrentNum>01</CurrentNum>
+			<PageStart>XJB_LQJ_001</PageStart>
+			<PageEnd>1111</PageEnd>
+		</Header>
+		<Body>
+			<userId>demo</userId>
+			<sysCode>000</sysCode>
+			<tokenCode>AT-87-s1WyYRS1LBdjVCYGUZJw0jceRLAXoB2M</tokenCode>
+		</Body>
+	</Service>
+
