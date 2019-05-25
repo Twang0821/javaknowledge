@@ -94,5 +94,51 @@ public class DateUtils {
 		String dateString = formatter.format(date);
 		return dateString;
 	}
+	
+	
+	/**
+	 * Unix时间戳(Unix timestamp)有两种，一种以秒为单位，另一种以毫秒为单位。
+	 * 	秒为单位是10位数；毫秒为单位是13位数；
+	 * http://tool.chinaz.com/Tools/unixtime.aspx
+	 * 将毫秒换算成日期
+	 * @param milliSecondsValue
+	 * @return
+	 */
+	public static String changemilliSecondsToDate(Long milliSecondsValue) {
+		String st = "1528754391638";//1528905591000
+		
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		
+		String time = dateFormat.format(new Date(milliSecondsValue));
+		return time;
+	}
+	
+	
+	
+	/**
+	 * 将秒(时间戳)转换成日期
+	 * @param secondsValue
+	 * @return
+	 */
+	public static String changeSecondsToDate(int seconds) {
+		
+		 //时间总的秒数  
+        //int seconds = 30654;  
+        //开始时间  
+        int startHours = seconds/3600;  
+        int startMinutes = (seconds%3600)/60;  
+        int startSeconds = (seconds%3600)%60;  
+          
+        Calendar cal=Calendar.getInstance();//使用日历类  
+        SimpleDateFormat format =  new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//时间格式  
+          
+        //时间：yyyy-MM-dd HH:mm:ss  
+        String startDateStr = cal.get(Calendar.YEAR) + "-" + (cal.get(Calendar.MONTH)+1)  
+                   + "-" + cal.get(Calendar.DAY_OF_MONTH) + " " + startHours  
+                   + ":" + startMinutes + ":" + startSeconds;  
+        System.out.println("时间：" + startDateStr);
+        
+        return startDateStr;
+	}
 
 }
