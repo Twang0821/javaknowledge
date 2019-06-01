@@ -1,4 +1,4 @@
-package cn.twang.afirstjava;	//Demo类在cn.twang.demo包下
+package cn.twang.javaknowledge.afirstjava;	//Demo类在cn.twang.demo包下
 
 import cn.twang.utils.firstUtils.Utils;
 
@@ -13,9 +13,10 @@ import cn.twang.utils.firstUtils.Utils;
 public class Demo {
 	
 	public static void main(String[] args) {
+		
 		System.out.println("helloword.java");
 		
-		//调用其它包中的类,则在上面要引入此类所在的包名直到所在java文件的类名。如:import cn.twang.utils.Utils
+		//调用其它包中的类,则在上面要引入此类所在的包名直到所在java文件的类名上的包名。如:import cn.twang.utils.firstUtils.Utils
 		Utils u = new Utils();
 		u.fun();
 
