@@ -41,6 +41,7 @@ public class DateUtils {
 	 * 中国的时区为"东八区"，因此与中国相差八小时的时区为“中时区”
 	 * UTC 通用标准时，以z来标识,转换成北京时间需要加8小时
 	 * http://www.028888.net/archives/2016_01_716.html
+	 * 
 	 * <pre>
 	 * UTCStrDateTimeToDefaultString("2018-05-23T00:00:45.628Z")	= 2018-05-23 08:00:45
 	 * </pre>
