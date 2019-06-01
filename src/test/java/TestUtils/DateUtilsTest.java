@@ -4,14 +4,14 @@ import org.junit.Test;
 
 import cn.twang.utils.dateUtils.DateUtils;
 
-/**@ClassName: TestDateUtils   
+/**@ClassName: DateUtilsTest   
  * @Description: Junit测试类
  * @author: Tyanao
  * @date: 2018年5月25日 下午12:22:46     
  * @Copyright: 2018 www.tydic.com Inc. All rights reserved. 
  * 注意：本内容仅限于****内部传阅，禁止外泄以及用于其他的商业目 
  */
-public class TestDateUtils {
+public class DateUtilsTest {
 
 	@Test
 	public void testGetNextDay() {
@@ -37,5 +37,15 @@ public class TestDateUtils {
 		String resStr = new DateUtils().UTCStrDateTimeToDefaultString(utcStrDateTime);
 		System.out.println("the result: " + resStr);
 	}
+	
+	// 测试 将毫秒换算成日期
+	@Test
+	public void testchangeMilliSecondsToDate() {
+		String st = "1528754391638"; //1528905591000
+		Long minllisecond = 1528754391638L; // 1528905591000
+		String resStr = DateUtils.changeMilliSecondsToDate(minllisecond, null);
+		System.out.println("the result: " + resStr);
+	}
+	
 
 }

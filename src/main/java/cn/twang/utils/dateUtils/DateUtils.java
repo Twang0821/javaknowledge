@@ -6,6 +6,8 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
+import org.apache.commons.lang3.StringUtils;
+
 /**
  * @Description:
  * 	SimpleDateFormat Format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
@@ -97,19 +99,32 @@ public class DateUtils {
 	
 	
 	/**
-	 * Unix时间戳(Unix timestamp)有两种，一种以秒为单位，另一种以毫秒为单位。
-	 * 	秒为单位是10位数；毫秒为单位是13位数；
+	 * <p>将毫秒换算成日期</p>
+	 * 
+	 * Unix时间戳(Unix timestamp)有两种，一种以秒为单位，另一种以毫秒为单位.
+	 * 	秒为单位是10位数；毫秒为单位是13位数;
 	 * http://tool.chinaz.com/Tools/unixtime.aspx
-	 * 将毫秒换算成日期
-	 * @param milliSecondsValue
-	 * @return
+	 * 
+	 * <pre>
+	 * changemilliSecondsToDate(1528754391638, null)		= 2018-06-12 05:59:51
+	 * </pre>
+	 *
+	 * @param millisecond 毫秒
+	 * @param strMillisecond 毫秒--字符串类型  与上面的只是入参类型不同
+	 * @return 字符串类型的 年月日 时分秒, 如: 2018-06-12 05:59:51
 	 */
-	public static String changemilliSecondsToDate(Long milliSecondsValue) {
-		String st = "1528754391638";//1528905591000
+	public static String changeMilliSecondsToDate(Long millisecond, String strMillisecond) {
+//		String st = "1528754391638";//1528905591000
 		
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		String time = "";
 		
-		String time = dateFormat.format(new Date(milliSecondsValue));
+		if (StringUtils.isNotBlank(strMillisecond)) {
+			time = dateFormat.format(new Date(Long.valueOf(strMillisecond)));
+		} else {
+			time = dateFormat.format(new Date(millisecond));
+		}
+		
 		return time;
 	}
 	
